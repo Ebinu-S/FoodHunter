@@ -1,3 +1,4 @@
+
 <h1>Recipes for <%=@search%> </h1>
 <table border = "1">
     <tr>
@@ -7,7 +8,7 @@
     </tr>
     <% @recipes.each do |recipe| %>
     <tr class= <%=cycle('even','odd')%> >
-        <td><%=image_tag(recipe["thumbnail"]) %></td>
+        <td><%= link_to(image_tag(recipe["thumbnail"])) %></td>
         <td><%= link_to(sanitize(recipe["title"]))%></td>
         <td><%= recipe["ingredients"] %></td>
     </tr>   
