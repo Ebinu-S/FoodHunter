@@ -6,11 +6,10 @@
     <th>Ingredients</th>
     </tr>
     <% @recipes.each do |recipe| %>
-    <tr>
+    <tr class= <%=cycle('even','odd')%> >
         <td><%=image_tag(recipe["thumbnail"]) %></td>
-        <td><%= link_to(recipe["title"])%></td>
+        <td><%= link_to(sanitize(recipe["title"]))%></td>
         <td><%= recipe["ingredients"] %></td>
     </tr>   
     <% end %>
-
 </table>

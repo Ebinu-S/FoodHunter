@@ -1,3 +1,44 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+table {
+    border-radius: 2px;
+}
+
+body {
+    background-color: #2E2E3A;
+    color: #F8F4E3;
+    overflow-X: hidden;
+}
+
+h1{
+    font-size: 2.3em;
+    text-align: center;
+    width: 100%;
+    margin: 0 50px;
+    color: #F46036;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #CBC9DB;
+}
+
+table {
+    width: 100%;
+    margin: 50px;
+    max-width: 1200PX;
+}
+// tr:nth-child(even) {background-color: #1E2019;}
+
+.even {
+    background-color: #484A47;
+}
+
+.odd {
+    background-color: #2A2B2A;
+}
