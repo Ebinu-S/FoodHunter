@@ -4,7 +4,9 @@
 <%= text_field_tag :search, params[:search]%>
 <%= submit_tag("search", :name=>nil)%>
 <%end%>
-
+<% if@recipes.empty?%>
+<h1>Oops Recipes for <%=@search%> doesn't exist. </h1>
+<% else%>
 </div>
 <h1>Recipes for <%=@search%> </h1>
 <table border = "1">
@@ -21,5 +23,11 @@
     </tr>   
     <% end %>
 </table>
+<%end%>
 
-<footer><a href="https://github.com/Ebinu-S/FoodHunter.git">Repository</a></footer>
+<footer><a href="https://github.com/Ebinu-S/FoodHunter.git">Repository</a>
+<P>Connect with me</p>
+<p><a href="https://github.com/Ebinu-S"><i class="fa fa-github" style="font-size:24px"></i> Github </a>&nbsp&nbsp&nbsp 
+<a href="https://www.instagram.com/dr.retr0_o/">Instagram <i class="fa fa-instagram" style="font-size:24px"></i></a> </p>
+<p>@Ebinu Suneer</P> 
+</footer>
